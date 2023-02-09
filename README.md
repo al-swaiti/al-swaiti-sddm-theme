@@ -88,7 +88,7 @@ as below
  Also see the [Arch wiki on SDDM](https://wiki.archlinux.org/index.php/SDDM).
 
 
-
+Enjoy!
 
 
 
