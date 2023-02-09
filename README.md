@@ -4,7 +4,7 @@
 
 ### Dependencies
 
-[`sddm >= 0.18.0`](https://github.com/sddm/sddm), [`qt5 >= 5.11.0`](http://doc.qt.io/qt-5/index.html), [`qt5-quickcontrols2 >= 5.11.0`](http://doc.qt.io/qt-5/qtquickcontrols2-index.html), [`qt5-svg >= 5.11.0`](https://doc.qt.io/qt-5/qtsvg-index.html)
+
 
 **Debian based** distros using the **APT** package manager:  
 *(Ubuntu/Kubuntu/Kali/Neon/antiX etc.)*  
@@ -27,17 +27,32 @@
 
 
 
-```
- sudo tar -xzvf ~/Downloads/sugar-dark.tar.gz -C /usr/share/sddm/themes
-```
+
 ### Instalation
 
-First be sure that sddm is your default
-![Alt text](sddm-service.png)
+
+```
+git clone https://github.com/al-swaiti/al-swaiti-sddm-theme
+
+cd al-swaiti-sddm-theme
+
+sudo tar -xzvf al-swaiti.tar.gz -C /usr/share/sddm/themes
+
+
+sudo cp -r /usr/share/sddm/themes/al-swaiti/TTF /usr/share/fonts/ 
+
+fc-cache -f -v
+
+```
+
+First be sure that sddm is your default display manager
+
 
 ```
 systemctl status display-manager
 ```
+![Alt text](sddm-service.png)
+
 If you have another display-manager (ex:gdm):
 ```
 sudo systemctl disable gdm.service
@@ -51,7 +66,7 @@ sudo systemctl enable sddm.service
 Now you have to set [theme] inside sddm.conf
 preferrably at `/etc/sddm.conf.d/default.conf`
 sometimes `/etc/sddm.conf.d/kde_settings.conf`
-**the name it's not important**
+**the name it's not important **
 if you didnt find any you can create one by :
 ```
 sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/  
@@ -61,6 +76,7 @@ Now edit file
 ```
 sudo nano /etc/sddm.conf.d/default.conf
 ```
+the most important u need to find [Theme] section inside .conf file 
   
 
 In the `[Theme]` section simply add the themes name: `Current=al-swaiti`.
