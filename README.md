@@ -10,8 +10,8 @@
 *(Ubuntu/Kubuntu/Kali/Neon/antiX etc.)*  
 <pre>sudo apt install --no-install-recommends sddm sddm-kcm</pre>  
 
-**Arch based** distros using the **pacman** package manger:  
-*(Obarun/Artix/Manjaro/KaOS/Chakra etc.)*  
+**Arch based** distros using the **pacman** package manger:
+*(ArcoLinux,Obarun/Artix/Manjaro/KaOS/Chakra etc.)*  
 <pre>sudo pacman -S --needed sddm sddm-kcm</pre>  
 
 **openSUSE** using the **zypper** package manager:  
