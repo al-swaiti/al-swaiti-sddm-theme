@@ -76,7 +76,9 @@ Now edit file
 ```
 sudo nano /etc/sddm.conf.d/default.conf
 ```
-the most important u need to find [Theme] section inside .conf file 
+`ctrl+o` to save then `ctrl+x' to exit 
+
+**the most important u need to find [Theme] section inside .conf file**
   
 
 In the `[Theme]` section simply add the themes name: `Current=al-swaiti`.
