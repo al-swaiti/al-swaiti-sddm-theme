@@ -1,0 +1,1 @@
+# al-swaiti-sddm-theme
